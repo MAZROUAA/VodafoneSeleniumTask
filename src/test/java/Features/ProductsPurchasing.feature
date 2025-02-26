@@ -21,4 +21,4 @@ Feature: Product Purchasing
 
     Examples:
       | username | password
-      | User4496 | 1234
+      | User4508 | 1234

@@ -6,13 +6,8 @@ import Tests.TestBase;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.time.Duration;
 
 
 public class UserRegisteration extends TestBase {
@@ -27,7 +22,7 @@ public class UserRegisteration extends TestBase {
     }
     @When("I click on Sign up button in Header")
     public void i_click_on_sign_up_button_in_header() throws InterruptedException {
-        Thread.sleep(7000);
+        homeObj.awaitilityWait(3);
         homeObj.openRegisterationpage();
 
 
@@ -46,7 +41,7 @@ public class UserRegisteration extends TestBase {
         Assert.assertEquals(alerttxt,"Sign up successful.");
         userRegObj.alertDismiss();
 
-        Thread.sleep(4000);
+        userRegObj.awaitilityWait(3);
     }
 
 }

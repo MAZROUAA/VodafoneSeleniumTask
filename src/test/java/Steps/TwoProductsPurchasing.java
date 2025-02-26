@@ -2,16 +2,12 @@ package Steps;
 
 import Pages.*;
 import Tests.TestBase;
-import UtilityHelper.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.Assert;
 
-import java.time.Duration;
 import java.util.AbstractMap;
 
 
@@ -41,7 +37,7 @@ public class TwoProductsPurchasing extends TestBase {
         Assert.assertEquals(alerttxt,"Sign up successful.");
         userRegObj.alertDismiss();
 
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
 
     }
@@ -70,7 +66,7 @@ public class TwoProductsPurchasing extends TestBase {
     public void the_user_clicks_on_laptops_in_categories_in_home_page() throws InterruptedException {
 
         homeObj.ChooseLaptops();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
     @When("Chooses product one and Clicks on Add to cart button")
     public void chooses_product_one_and_clicks_on_add_to_cart_button()  {
@@ -86,11 +82,11 @@ public class TwoProductsPurchasing extends TestBase {
         Assert.assertEquals(alerttxt,"Product added.");
         userRegObj.alertDismiss();
 
-        Thread.sleep(3000);
+        userRegObj.awaitilityWait(3);
         userRegObj.navigate_back();
         userRegObj.navigate_back();
         homeObj.ChooseLaptops();
-        Thread.sleep(3000);
+        homeObj.awaitilityWait(3);
 
 
     }
@@ -108,7 +104,7 @@ public class TwoProductsPurchasing extends TestBase {
         Assert.assertEquals(alerttxt,"Product added.");
         userRegObj.alertDismiss();
 
-        Thread.sleep(3000);
+        userRegObj.awaitilityWait(3);
         userRegObj.navigate_back();
         userRegObj.navigate_back();
     }
@@ -166,7 +162,7 @@ public class TwoProductsPurchasing extends TestBase {
     public void the_message_thank_you_for_your_purchase_should_be_displayed() throws InterruptedException {
 
         Assert.assertEquals(placeOrderObj.GetPurchaseSuccessMessage(),"Thank you for your purchase!");
-        Thread.sleep(3000);
+        placeOrderObj.awaitilityWait(3);
     }
 
 
