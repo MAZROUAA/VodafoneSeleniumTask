@@ -1,0 +1,7 @@
+Pages\PageBase.class
+org\example\Main.class
+Pages\CartPage.class
+Pages\LoginPage.class
+Pages\HomePage.class
+Pages\PlaceOrderPage.class
+Pages\UserRegisterationPage.class

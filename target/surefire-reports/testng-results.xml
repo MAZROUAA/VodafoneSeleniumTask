@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-26T14:31:52 EET" name="Test suite" finished-at="2025-02-26T14:32:25 EET" duration-ms="33591">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@6d763516]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-02-26T14:31:52 EET" name="Scenarios Test" finished-at="2025-02-26T14:32:25 EET" duration-ms="33591">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:31:52 EET" name="setUpClass" finished-at="2025-02-26T14:31:52 EET" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a1cc163]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:31:52 EET" name="startDriver" finished-at="2025-02-26T14:31:57 EET" duration-ms="5014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:31:57 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-26T14:31:58 EET" duration-ms="1252" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["two products purchasing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Purchasing"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign up successful.] but found [This user already exist.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Steps.TwoProductsPurchasing.the_user_has_registered_successfully_using(TwoProductsPurchasing.java:44)
+at ✽.the user has registered successfully using "User4487" , "<password>"(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/ProductsPurchasing.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="stopdriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:31:58 EET" name="stopdriver" finished-at="2025-02-26T14:31:59 EET" duration-ms="790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopdriver -->
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:31:59 EET" name="startDriver" finished-at="2025-02-26T14:32:03 EET" duration-ms="4167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:03 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-26T14:32:11 EET" duration-ms="8078" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign up successful.] but found [This user already exist.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Steps.UserRegisteration.the_sign_up_successful_message_appears_successfully(UserRegisteration.java:49)
+at ✽.The “Sign up successful.” message appears successfully(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/UserRegisteration.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="stopdriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:11 EET" name="stopdriver" finished-at="2025-02-26T14:32:12 EET" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopdriver -->
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:12 EET" name="startDriver" finished-at="2025-02-26T14:32:16 EET" duration-ms="4234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:16 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-26T14:32:24 EET" duration-ms="8092" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign up successful.] but found [This user already exist.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Steps.UserRegisteration.the_sign_up_successful_message_appears_successfully(UserRegisteration.java:49)
+at ✽.The “Sign up successful.” message appears successfully(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/UserRegisteration.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="stopdriver()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:24 EET" name="stopdriver" finished-at="2025-02-26T14:32:25 EET" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopdriver -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@6d763516]" started-at="2025-02-26T14:32:25 EET" name="tearDownClass" finished-at="2025-02-26T14:32:25 EET" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Scenarios Test -->
+  </suite> <!-- Test suite -->
+</testng-results>

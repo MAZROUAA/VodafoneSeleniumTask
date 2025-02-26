@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 34.009 s <<< FAILURE! - in TestSuite
+Runner.TestRunner.runScenario["two products purchasing", "Product Purchasing"](1)  Time elapsed: 1.254 s  <<< FAILURE!
+java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Steps.TwoProductsPurchasing.the_user_has_registered_successfully_using(TwoProductsPurchasing.java:44)
+	at ✽.the user has registered successfully using "User4487" , "<password>"(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/ProductsPurchasing.feature:5)
+
+Runner.TestRunner.runScenario["User Registration", "User Registration"](2)  Time elapsed: 8.079 s  <<< FAILURE!
+java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Steps.UserRegisteration.the_sign_up_successful_message_appears_successfully(UserRegisteration.java:49)
+	at ✽.The “Sign up successful.” message appears successfully(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/UserRegisteration.feature:8)
+
+Runner.TestRunner.runScenario["User Registration", "User Registration"](3)  Time elapsed: 8.092 s  <<< FAILURE!
+java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Steps.UserRegisteration.the_sign_up_successful_message_appears_successfully(UserRegisteration.java:49)
+	at ✽.The “Sign up successful.” message appears successfully(file:///C:/Users/Mohamed%20Mazrouaa/IdeaProjects/VodafoneTask/src/test/java/features/UserRegisteration.feature:8)
+

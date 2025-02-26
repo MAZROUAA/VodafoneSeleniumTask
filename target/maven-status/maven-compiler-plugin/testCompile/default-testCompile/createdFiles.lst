@@ -1,0 +1,7 @@
+data\LoadPropertiesFile.class
+Tests\TestBase.class
+Steps\UserRegisteration.class
+Runner\TestRunner.class
+Tests\UserRegisterationTest.class
+UtilityHelper\Helper.class
+Steps\TwoProductsPurchasing.class
