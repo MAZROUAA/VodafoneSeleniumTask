@@ -1,1 +1,17 @@
-Read
+Tools and Technoligies Used:
+
+1. Selenium: A framework for automating web browsers to simulate real-user interactions for UI testing.
+2. Java: The programming language used to write the Selenium automation scripts and logic.
+3. Maven: A build automation tool that manages project dependencies and automates the build and testing processes.
+4. TestNG: A testing framework used for managing test execution, configurations.
+5. Cucumber: A tool for writing behavior-driven tests in natural language using Gherkin syntax.
+6. Allure Reporting: A reporting tool that generates visually appealing, detailed HTML test execution reports.
+
+
+Steps For Run:
+1. Put your test data in src/test/java/Features/(.feature file)
+2. Run your tests from the TestRunner class (src/test/java/Runner/TestRunner.java)
+
+Note:
+You can find a demo video in /video directory.
+
