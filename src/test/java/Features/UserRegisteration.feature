@@ -8,5 +8,5 @@ Feature: User Registration
     Then The “Sign up successful.” message appears successfully
     Examples:
       | username | password
-      | User7923 | 1234
-      | User7924 | 1234
+      | User7935 | 1234
+      | User7936 | 1234
