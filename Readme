@@ -13,5 +13,5 @@ Steps For Run:
 2. Run your tests from the TestRunner class (src/test/java/Runner/TestRunner.java)
 
 Note:
-You can find a demo video in /video directory.
+You can find a demo video in /video directory, in the code i added some Thread.sleep() to make the video more observable.
 
